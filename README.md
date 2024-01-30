@@ -6,7 +6,7 @@
 
  Collection of deep learning-based metal artifact reduction articles for CT/CBCT Imaging
 
-**Dual Domain Diffusion Guidance for 3D CBCT Metal Artifact Reduction**
+**Dual Domain Diffusion Guidance for 3D CBCT Metal Artifact Reduction** \
 *Y. Choi et al.* \
 **Summary** \
 The authors propose to use two 2D diffusion models in image domain to synthesize metal artifacts and metal free images, respectively. The combination of metal artifact and metal free images is forward projected and a guidance from the error in the projection domain is used. The results are compared with InDuDoNet+, ACDNet, FEL, and Blind DPS methods.  \
@@ -34,3 +34,9 @@ metal artifact reduction of highly truncated CBCT scans** \
 The paper proposes to use Swin-transformer for metal segmentation in the projection domain for CBCT data. Simulation data is used for the training. U-Net is shown to work best when the test data is similiar to the train data. But when the test data source is different than training, Swin transformer performs better.\
 arxiv 2022. [[Paper](https://arxiv.org/abs/2203.09207)] \
 Medical Physics 2023. [[doi](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.16919)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.16919)
+
+**Metal Artifact Reduction In Cone-Beam Extremity Images Using Gated Convolutions** \
+*H. Agrawal et al.* \
+**Summary** \
+The authors propose to use Gated Convoltuions for the metal area inpainting in the projection domain. The method is compared against linear interpolation, U-Net, and Partial Convolutions. \
+ISBI 2021. [[doi](https://ieeexplore.ieee.org/document/9434163)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://acris.aalto.fi/ws/portalfiles/portal/64983388/ELEC_Agrawal_etal_Metal_artifact_reduction_IEEE_ISBI2021_acceptedauthormanuscript.pdf)
