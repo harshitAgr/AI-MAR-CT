@@ -23,8 +23,8 @@ WACV 2024. [[doi](https://openaccess.thecvf.com/content/WACV2024/papers/Choi_Dua
 *Z. Li et al.* \
 **Summary** \
 In addition to the dual domain artifact reduction in sinogram and image domain, the paper proposed to also apply Fourier domain processing of features in sinogram and image domain, respectively.\
-arXiv 2023. [[Paper](https://arxiv.org/abs/2207.11678)] [![Code](https://img.shields.io/badge/Code-purple.svg)](https://github.com/longzilicart/Quad-Net/tree/master) \
-IEEE TMI 2024. [[doi](https://ieeexplore.ieee.org/document/10385220)]
+arXiv 2023 [[Paper](https://arxiv.org/abs/2207.11678)]. IEEE TMI 2024. [[doi](https://ieeexplore.ieee.org/document/10385220)]. [![Code](https://img.shields.io/badge/Code-purple.svg)](https://github.com/longzilicart/Quad-Net/tree/master)
+
 
 **Unsupervised metal artifacts reduction network for CT images based on
 efficient transformer** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
@@ -34,11 +34,11 @@ A method to incorporate efficient Transformer blocks in the two generators of th
 BSPC. Nov, 2023. [[doi](https://doi.org/10.1016/j.bspc.2023.105753)]
 
 **Simulation-driven training of vision transformers enables
-metal artifact reduction of highly truncated CBCT scans** \
-*F. Fan et al.* <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
+metal artifact reduction of highly truncated CBCT scans** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
+*F. Fan et al.*  \
 **Summary** \
 The paper proposes to use Swin-transformer for metal segmentation in the projection domain for CBCT data. Simulation data is used for the training. U-Net is shown to work best when the test data is similiar to the train data. But when the test data source is different than training, Swin transformer performs better.\
-arxiv 2022. [[Paper](https://arxiv.org/abs/2203.09207)] \
+arxiv 2022 [[Paper](https://arxiv.org/abs/2203.09207)]. 
 Medical Physics 2023. [[doi](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.16919)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.16919)
 
 **Metal Artifact Reduction In Cone-Beam Extremity Images Using Gated Convolutions** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
@@ -46,3 +46,10 @@ Medical Physics 2023. [[doi](https://aapm.onlinelibrary.wiley.com/doi/full/10.10
 **Summary** \
 The authors propose to use Gated Convoltuions for the metal area inpainting in the projection domain. The method is compared against linear interpolation, U-Net, and Partial Convolutions. \
 ISBI 2021. [[doi](https://ieeexplore.ieee.org/document/9434163)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://acris.aalto.fi/ws/portalfiles/portal/64983388/ELEC_Agrawal_etal_Metal_artifact_reduction_IEEE_ISBI2021_acceptedauthormanuscript.pdf)
+
+**ADN: Artifact Disentanglement Network for
+Unsupervised Metal Artifact Reduction** \
+*H. Liao et al.* <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+**Summary** \
+The authors propose to use a disentanglement network to separate the metal artifact and the non-metal artifact latents. Two encoders are used to conde the latents. The latents are used by the decoders to generate the metal artifact affected and metal artifact free images. The method is compared against linear interpolation, NMAR, U-Net, cGANMAR,and CycleGAN among other methods. U-Net had the best PSNR and cGANMAR had the best SSIM. ADN had best PSNR and SSIM among the compared unsupervised methods. \
+arXiv 2019 [[Paper](https://arxiv.org/pdf/1908.01104.pdf)]. IEEE TMI 2019. [[doi](https://ieeexplore.ieee.org/document/8788607)] [![Code](https://img.shields.io/badge/Code-purple.svg)](https://github.com/liaohaofu/adn)
