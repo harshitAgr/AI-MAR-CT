@@ -4,7 +4,14 @@
  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Made With Love](https://img.shields.io/badge/Made%20With-Love-red.svg)](https://github.com/chetanraj/awesome-github-badges)
 
- Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging
+ Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
+
+ 
+ **A denoising diffusion probabilistic model for metal artifact reduction in CT**  <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+*G. M. Karageorgos et al.* \
+**Summary** \
+The authors propose to use a denoising diffusion probabilistic model (DDPM) for metal artifact reduction in CT. The model was used to inpaint the metal traces in the projection domain. The training was done in the unsupervised manner but during the inference, the segmented metal trace was required. The DDPM model was compared with a Partial Convolutions-based U-Net and a Gated Convolutions-based GAN. The proposed method showed promising results, however, the method was computationally expensive. Moreover, it was less effective in reducing met artifacts caused by large metal objects. The authors also noted that it is crucial to have an accurate metal trace segmentation for the best performance of the proposed network\
+IEEE TMI, 2024. [[doi]](https://ieeexplore.ieee.org/document/10586949)
 
  **PND-Net: Physics-inspired Non-local Dual-domain Network for Metal Artifact Reduction**  <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
  *J. Xia et al.* \
