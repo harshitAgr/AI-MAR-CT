@@ -53,6 +53,12 @@ metal artifact reduction of highly truncated CBCT scans** <img src="https://img.
 The paper proposes to use Swin-transformer for metal segmentation in the projection domain for CBCT data. Simulation data is used for the training. U-Net is shown to work best when the test data is similiar to the train data. But when the test data source is different than training, Swin transformer performs better.\
 Medical Physics, 2023. [[doi](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.16919)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.16919)
 
+**DL-based inpainting for metal artifact reduction for cone beam CT using metal path length information** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
+*T. M. Gottschalk et al.* \
+**Summary** \
+The authors propose to use a U-Net for inpainting the metal traces in the projection domain. The metal path length information is used to guide the inpainting along with the metal mask. Authors suggest that it is benificial to not dicard the information inside the metal mask. Additionally, 10 nearby projections were also concatenated to the input, making the total number of channels in the input 13. The output was the projection to be inpainted/corrected.\
+Medical Physics, 2022. [[doi](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.15909)]
+
 **A fidelity-embedded learning for metal artifact reduction in dental CBCT** <img src="https://img.shields.io/badge/Iterative-blue.svg" alt="Iterative"> \
 *H. S. Park et al.* \
 **Summary** \
