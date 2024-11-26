@@ -6,6 +6,11 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+**Metal implant segmentation in CT images based on diffusion model** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
+*K. Xie et al.* \
+**Summary** \
+The authors propose to use a diffusion model "DiffSeg" to segment the metal implants in CT images. The method is compared against U-Net, Attention U-Net, R2U-Net, and DeepLabV3+. The training and testing is conducted using simulated data. Additionally, the method is also tested on real clinical data. The method is shown to outperform the other methods. Better segmentation of metals is shown to reduce the artifacts when using NMAR. \
+BMC Medical Imaging, 2024. [[doi]( https://doi.org/10.1186/s12880-024-01379-1)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://bmcmedimaging.biomedcentral.com/articles/10.1186/s12880-024-01379-1) 
  
  **A denoising diffusion probabilistic model for metal artifact reduction in CT**  <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
 *G. M. Karageorgos et al.* \
