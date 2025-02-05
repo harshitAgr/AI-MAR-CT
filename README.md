@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+**Implicit neural representation-based method formetal-induced beam hardening artifact reduction in X-rayCT imaging** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+*H. S. Park et al.* \
+**Summary** \
+This paper introduces a parameter-free metal-induced beam hardening correction (MBHC) method for CT imaging utilizing implicit neural representations (INRs). In contrast to the MBHC approach, the proposed method generates two tomographic images: one representing the monochromatic attenuation distribution and the other capturing nonlinear beam hardening effects. This eliminates the need for explicit metal segmentation and parameter estimation. The INR-generated images are combined to simulate forward projection data, which is then used to compute a loss function for network training. Experimental results demonstrate effective reduction of beam hardening artifacts arising from interactions between metals, bone, and teeth. Furthermore, the method exhibits potential for addressing challenges associated with photon starvation and truncated fields-of-view, leading to improved image reconstruction quality. \
+Medical Physics, 2025. [[doi](doi/10.1002/mp.17649)]
+
 **Metal implant segmentation in CT images based on diffusion model** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
 *K. Xie et al.* \
 **Summary** \
