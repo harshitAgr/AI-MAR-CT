@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+**Radiologist-in-the-Loop Self-Training for Generalizable CT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Self-Supervised-blue.svg" alt="Self-Supervised"> \
+*C. Ma et al.* \
+**Summary** \
+RISE-MAR is a novel radiologist-in-the-loop self-training framework for generalizable CT metal artifact reduction (MAR), addressing the domain gap and confirmation bias issues in existing supervised and semi-supervised MAR methods. The framework integrates a Clinical Quality Assessor (CQA)—a transformer-based network trained on radiologist-annotated CT images—that evaluates MAR outputs and ensures only high-quality pseudo ground-truths are used for training. CQA employs a spatial-frequency token mixer combining convolutional and self-attention mechanisms for multi-scale feature extraction, followed by a vectorization layer and quality head that predicts clinical quality scores. The self-training framework utilizes a teacher-student architecture, where the teacher network, pretrained on simulated MAR data, generates pseudo ground-truths for real clinical images. These pseudo ground-truths are assessed by CQA, and only high-quality ones (within a defined threshold) train the student MAR network via a supervised loss (L_sim) on paired simulated data and an unsupervised loss on real clinical images. The teacher model is progressively updated using an Exponential Moving Average (EMA) of the student’s improved weights, ensuring continuous refinement of pseudo ground-truths. Extensive experiments on multiple clinical datasets demonstrate RISE-MAR's superior generalization over state-of-the-art methods in out-of-domain datasets.\
+[[arXiv](https://arxiv.org/pdf/2501.15610)]. IEEE TMI, 2025. [[doi](https://ieeexplore.ieee.org/abstract/document/10857416)]
+
  **Implicit neural representation-based method formetal-induced beam hardening artifact reduction in X-rayCT imaging** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
 *H. S. Park et al.* \
 **Summary** \
@@ -83,7 +89,7 @@ Medical Phyics, 2022. [[doi](https://doi.org/10.1002/mp.15720)]
 The authors propose to use Gated Convoltuions for the metal area inpainting in the projection domain. The method is compared against linear interpolation, U-Net, and Partial Convolutions. \
 ISBI, 2021. [[doi](https://ieeexplore.ieee.org/document/9434163)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://acris.aalto.fi/ws/portalfiles/portal/64983388/ELEC_Agrawal_etal_Metal_artifact_reduction_IEEE_ISBI2021_acceptedauthormanuscript.pdf)
 
-**ADN: Artifact Disentanglement Network for
+1\. **ADN: Artifact Disentanglement Network for
 Unsupervised Metal Artifact Reduction** \
 *H. Liao et al.* <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
 **Summary** \
