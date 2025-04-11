@@ -6,6 +6,14 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+ **PRAISE-Net: Deep Projection-domain
+Data-consistent Learning Network for CBCT Metal
+Artifact Reduction** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
+*Z. Wu et al.* \
+**Summary** \
+PRAISE-Net is a deep learning framework for metal artifact reduction (MAR) in cone-beam computed tomography (CBCT), designed to ensure data consistency in the projection domain. It employs a Low2High strategy consisting of two stages. In the first stage, the Prior Information-Guided Denoising Diffusion Probabilistic Model (PIG-DDPM) performs low-resolution inpainting of metal-corrupted regions. The inputs to this model are the projection data affected by metal artifacts and a prior estimate generated using linear interpolation; the target is the corresponding metal-free projection data. In the second stage, a Super-Resolution Reconstruction (SRR) module based on a Swin Transformer takes the inpainted low-resolution projections and reconstructs high-resolution projections. The target for this stage is the high-resolution metal-free projection data. To improve generalization to real clinical CBCT data, PRAISE-Net incorporates a CBCT Domain Adaptation (CBCT-DA) module into the training phase of PIG-DDPM. CBCT-DA uses two encoders to disentangle domain-invariant anatomical features from domain-specific features. It employs adversarial loss through a domain discriminator to align the feature distributions of simulated and clinical data, and uses mutual information loss to enforce separation between anatomical and domain-relevant representations. Importantly, CBCT-DA is used only during training to enable domain-invariant feature learning; it is not required during testing, where the trained model can be directly applied to clinical CBCT data. After high-resolution projections are restored, the final CBCT images are reconstructed using the Feldkamp-Davis-Kress (FDK) algorithm. \
+IEEE Transactions on Instrumentation and Measurement, 2025. [[doi](https://doi.org/10.1109/TIM.2025.3551446)]
+
 **Radiologist-in-the-Loop Self-Training for Generalizable CT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Self-Supervised-blue.svg" alt="Self-Supervised"> \
 *C. Ma et al.* \
 **Summary** \
