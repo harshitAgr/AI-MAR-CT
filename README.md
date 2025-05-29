@@ -97,6 +97,14 @@ Medical Phyics, 2022. [[doi](https://doi.org/10.1002/mp.15720)]
 The authors propose to use Gated Convoltuions for the metal area inpainting in the projection domain. The method is compared against linear interpolation, U-Net, and Partial Convolutions. \
 ISBI, 2021. [[doi](https://ieeexplore.ieee.org/document/9434163)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://acris.aalto.fi/ws/portalfiles/portal/64983388/ELEC_Agrawal_etal_Metal_artifact_reduction_IEEE_ISBI2021_acceptedauthormanuscript.pdf)
 
+**Multiple Window Learning for CT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
+*C. Niu et al.* \
+**Summary** \
+The authours proposed a deep learning-based framework to enhance CT MAR by leveraging information across multiple Hounsfield Unit (HU) windows. They argued that traditional approaches typically normalize CT data into a single HU window, which can compromise training effectiveness due to unequal emphasis on different HU ranges—an important consideration in clinical applications where tissues are best visualized under specific window settings.  Multiple Window Learning Network (MWLNet) addresses this by employing multiple convolutional neural network (CNN) branches, each tailored to a specific HU window. Inter-branch communication is facilitated by Window Transfer (WT) layers, which normalize and clip image data to map across HU ranges, enabling end-to-end training with gradients flowing between branches to enforce learning across scales. The training strategy uses an L1 loss summed across all window branches to ensure balanced learning, with three specific windows selected: [-1000, 2000], [-320, 480], and [-160, 240], though the method is flexible to other configurations. Training utilized paired artifact-free and artifact-affected images generated via CatSim-based simulation. MWLNet was evaluated on simulated CT scans of spine, teeth, and hip regions, as well as clinical datasets, with all images being 512×512 slices exhibiting varying artifact levels. Results showed that MWLNet outperformed NMAR and single-window CNN baselines (SWLNets) in PSNR, SSIM, and visual quality, notably preserving fine structures in narrow windows while reducing artifacts more effectively. Intermediate results validated that contextual information from larger HU windows improves prediction accuracy in smaller windows.
+Proc. SPIE, 2021. [[doi]( https://doi.org/10.1117/12.2596239)]
+
+
+
 1\. **ADN: Artifact Disentanglement Network for
 Unsupervised Metal Artifact Reduction** \
 *H. Liao et al.* <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
