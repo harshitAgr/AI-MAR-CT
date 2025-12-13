@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+1. **UPMCL-Net: Unsupervised Projection-domain Multiview Constraint Learning for CBCT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+*Z. Wu et al.* \
+**Summary** \
+UPMCL-Net directly learns to inpaint metal-corrupted CBCT projections without paired ground truth by combining a transformer-based MultiView Consistency Module (MVCM) that mines complementary anatomy across adjacent and interval views with a Hybrid Feature Attention Module (HFAM) that adaptively fuses intraview background cues and interview priors. Training is fully unsupervised: triangulation-based interpolation provides self-reconstruction targets, randomly generated pseudo masks expose the model to diverse missing patterns, and an adversarial loss sharpens fine textures in the synthesized metal traces. Trained on 25 of 30 intraoperative spine CBCT scans and evaluated on the remaining cases, UPMCL-Net surpasses LI, TRI, RegGAN, AOT-GAN, LBAM, and Palette on both simulated and clinical data. \
+IEEE Transactions on Medical Imaging, 2025. [[doi](https://doi.org/10.1109/TMI.2025.3638630)]
+
 1. **Dual-Domain Denoising Diffusion Probabilistic Model for Metal Artifact Reduction** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
 *W. Xia et al.* \
 **Summary** \
