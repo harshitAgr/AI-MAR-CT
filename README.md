@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+1. **UPGRADE-Net: Unsupervised Sinogram-domain Data-Consistent Network for Metal Artifact Reduction** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+*Z. Wu et al.* \
+**Summary** \
+UPGRADE-Net tackles CT MAR directly in the sinogram by pairing a conditional denoising diffusion model (DDPM-MAR) with an unsupervised reverse pipeline that learns metal-trace statistics from pseudo masks injected into metal-free regions interpolated via LI. The diffusion model is regularized with two physics-driven constraints—conjugate-ray consistency to tie symmetric detector bins and accumulation-ray consistency to preserve per-view line integrals—so the network honors data fidelity without paired supervision. Trained on 40k synthetic cases assembled from DeepLesion slices (256×256, 361 views, 367 detectors) using 40 randomly sampled masks drawn from a library of 80 shapes (with the remaining 10 masks held out for 2k evaluation cases alongside real experimental scans), UPGRADE-Net lifts sinogram PSNR/SSIM to 33.44 dB / 0.961, surpassing FBP, LI, IMAR, SIDNN, Edge GAN, and matching supervised ACDNet while maintaining sharper lung and abdominal structures around large implants. \
+IEEE Transactions on Medical Imaging, 2025. [[doi](https://doi.org/10.1109/TMI.2025.3630832)]
+
 1. **UPMCL-Net: Unsupervised Projection-domain Multiview Constraint Learning for CBCT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
 *Z. Wu et al.* \
 **Summary** \
