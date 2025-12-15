@@ -69,6 +69,12 @@ IEEE TMI, 2024. [[doi]](https://ieeexplore.ieee.org/document/10586949)
 The authors propose to use two 2D diffusion models in image domain to synthesize metal artifacts and metal free images, respectively. The combination of metal artifact and metal free images is forward projected and a guidance from the error in the projection domain is used. The results are compared with InDuDoNet+, ACDNet, FEL, and Blind DPS methods.  \
 WACV, 2024. [[doi](https://openaccess.thecvf.com/content/WACV2024/papers/Choi_Dual_Domain_Diffusion_Guidance_for_3D_CBCT_Metal_Artifact_Reduction_WACV_2024_paper.pdf)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://openaccess.thecvf.com/content/WACV2024/papers/Choi_Dual_Domain_Diffusion_Guidance_for_3D_CBCT_Metal_Artifact_Reduction_WACV_2024_paper.pdf)
 
+1. **Polyner: Unsupervised Polychromatic Neural Representation for CT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+*Q. Wu et al.* \
+**Summary** \
+Polyner treats MAR as a nonlinear reconstruction problem, embedding a differentiable polychromatic CT forward model and an energy-dependent smoothness prior inside an implicit neural representation (hash-encoded MLP) so each scan can be optimized end-to-end without external training data. During inference, 80 rays are randomly sampled per iteration and the network learns case-specific attenuation fields across up to 101 energy bins in ~2 minutes for a 256×256 slice, preserving metal-trace signals instead of masking them. On synthetic DeepLesion data it reaches 37.57 dB / 0.975 SSIM (2nd overall) and on the OOD XCOM benchmark it tops all baselines at 38.74 dB / 0.951 SSIM, outperforming supervised CNN-MAR/DICDNet/ACDNet. The same per-case optimization transfers to real micro-CT walnuts with clips and mouse tibia scans, removing residual streaks left by FBP, LI, Score-MAR, and even ACDNet. \
+NeurIPS, 2023. [[doi](https://dl.acm.org/doi/abs/10.5555/3666122.3669170)][![Code](https://img.shields.io/badge/Code-purple.svg)](https://github.com/iwuqing/Polyner)[![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](proceedings.neurips.cc/paper_files/paper/2023/file/dbf02b21d77409a2db30e56866a8ab3a-Paper-Conference.pdf)
+
 1. **Deep learning based projection domain metal segmentation for metal artifact reduction in cone beam computed tomography** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
 *H. Agrawal et al.* \
 **Summary** \
