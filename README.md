@@ -56,6 +56,12 @@ BMC Medical Imaging, 2024. [[doi]( https://doi.org/10.1186/s12880-024-01379-1)] 
 The authors propose to use a denoising diffusion probabilistic model (DDPM) for metal artifact reduction in CT. The model was used to inpaint the metal traces in the projection domain. The training was done in the unsupervised manner but during the inference, the segmented metal trace was required. The DDPM model was compared with a Partial Convolutions-based U-Net and a Gated Convolutions-based GAN. The proposed method showed promising results, however, the method was computationally expensive. Moreover, it was less effective in reducing metal artifacts caused by large metal objects. The authors also noted that it is crucial to have an accurate metal trace segmentation for the best performance of the proposed network\
 IEEE TMI, 2024. [[doi]](https://ieeexplore.ieee.org/document/10586949)
 
+1. **DiffMAR: A Generalized Diffusion Model for Metal Artifact Reduction in CT images**  <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
+*T. Cai et al.* \
+**Summary** \
+DiffMAR frames CT metal artifact reduction as reversing a physically motivated *linear degradation* process that mimics metal-artifact formation, and learns an iterative restoration path with a conditional diffusion model trained on paired metal-corrupted/metal-free CT images. To reduce error accumulation across the multi-step reverse process, it introduces a Time-Latent Adjustment (TLA) module that adaptively adjusts time embeddings at the latent level. To better preserve anatomy (and avoid over-smoothing), it adds a Structure Information Extraction (SIE) module that extracts structural priors from the linearly-interpolated (LI) correction in the image domain and injects them at each restoration step. On a DeepLesion-based synthetic benchmark (1,000 training images; 90 training masks; 2,000 test images; images resized to 416×416 with 640 views) and clinical testing (SpineWeb plus an in-house dental CT set), DiffMAR outperforms LI, DuDoNet, InDuDoNet(+), CycleGAN/Pix2PixGAN, and DICDNet/ACDNet, improving average PSNR/SSIM from 45.31 dB / 0.9899 (ACDNet) to 46.28 dB / 0.9922 and lowering RMSE from 0.0133 to 0.0119 on the synthetic test set. \
+IEEE Journal of Biomedical and Health Informatics, 2024. [[doi](https://doi.org/10.1109/JBHI.2024.3439729)]
+
 1. **PND-Net: Physics-inspired Non-local Dual-domain Network for Metal Artifact Reduction**  <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
  *J. Xia et al.* \
  **Summary**\
