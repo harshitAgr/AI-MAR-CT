@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+1. **Unsupervised CT Metal Artifact Reduction by Plugging Diffusion Priors in Dual Domains** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+*X. Liu, Y. Xie, S. Diao, S. Tan, X. Liang* \
+**Summary** \
+DuDoDp-MAR is an unsupervised dual-domain metal artifact reduction method that leverages diffusion model priors without requiring paired training data. The approach first trains a diffusion model on artifact-free CT images, then iteratively applies the learned priors in both sinogram and image domains to restore metal-corrupted regions. A key innovation is the use of temporally dynamic weight masks for image-domain fusion. Trained and evaluated on DeepLesion-based synthetic data (90 metal masks for training, 10 for testing) and clinical datasets, DuDoDp-MAR achieves the best overall performance among unsupervised methods, surpassing Score-MAR (another diffusion-based approach), ADN, and even the supervised CNNMAR, while demonstrating superior visual quality on clinical data. \
+[[arXiv](https://arxiv.org/abs/2308.16742)] IEEE Transactions on Medical Imaging, 2024. [[doi](https://doi.org/10.1109/TMI.2024.3351201)] [![Code](https://img.shields.io/badge/Code-purple.svg)](https://github.com/DeepXuan/DuDoDp-MAR)
+
 1. **DCDiff: Dual-Domain Conditional Diffusion for CT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
 *R. Shen, X. Li, Y.-F. Li, C. Sui, Y. Peng, Q. Ke* \
 **Summary** \
