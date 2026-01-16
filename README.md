@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+1. **DCDiff: Dual-Domain Conditional Diffusion for CT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
+*R. Shen, X. Li, Y.-F. Li, C. Sui, Y. Peng, Q. Ke* \
+**Summary** \
+DCDiff is a supervised dual-domain diffusion framework for CT MAR that conditions the image generation process on both image-domain and sinogram-domain information. In the image domain, the raw metal-corrupted CT image and the filtered back-projection (FBP) of the metal trace are used as conditions; in the sinogram domain, a novel Diffusion Interpolation (DI) algorithm generates sinogram priors by training a dedicated diffusion model to inpaint the metal-corrupted regions. Two UNet-based denoising networks (~26M parameters total) are trained on paired metal-corrupted/metal-free CT images from the DeepLesion dataset. Ablation studies show that adding DI improves PSNR/SSIM from 31.59 dB/0.9124 to 35.47 dB/0.9390. Experimental results demonstrate that DCDiff outperforms LI, NMAR, DuDoNet, and InDuDoNet on both synthetic and clinical data. \
+MICCAI, 2024. [[doi](https://doi.org/10.1007/978-3-031-72104-5_22)] [![Open Access](https://img.shields.io/badge/Open%20Access-brightgreen.svg)](https://papers.miccai.org/miccai-2024/paper/1608_paper.pdf)
+
 1. **UPGRADE-Net: Unsupervised Sinogram-domain Data-Consistent Network for Metal Artifact Reduction** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
 *Z. Wu et al.* \
 **Summary** \
