@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+ 1. **Bi-Constraints Diffusion: A Conditional Diffusion Model With Degradation Guidance for Metal Artifact Reduction** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+*M. Luo, N. Zhou, T. Wang, L. He, W. Wang, H. Chen, P. Liao, Y. Zhang* \
+**Summary** \
+BCDMAR is an unsupervised metal artifact reduction method that combines iterative reconstruction with a conditional score-based diffusion model. Unlike traditional approaches that use metal-excluded projection operators, BCDMAR introduces a metal artifact degradation operator in the data-fidelity term and employs a pre-corrected image as a prior constraint to guide the diffusion model's generation process, effectively preventing grayscale shifts and unreliable structures. By iteratively applying the score-based diffusion model and the data-fidelity step in each sampling iteration, the method maintains reliable tissue representation around metal regions while producing highly consistent structures in non-metal regions. Extensive experiments demonstrate BCDMAR's superior performance over state-of-the-art unsupervised methods (ADN, ACDNet) and supervised methods (DuDoNet, InDuDoNet+) both quantitatively and visually. \
+IEEE Transactions on Medical Imaging, 2025. [[doi](https://doi.org/10.1109/TMI.2024.3442950)]
+
 1. **Unsupervised CT Metal Artifact Reduction by Plugging Diffusion Priors in Dual Domains** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
 *X. Liu, Y. Xie, S. Diao, S. Tan, X. Liang* \
 **Summary** \
