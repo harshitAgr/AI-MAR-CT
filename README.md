@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+ 1. **TDMAR-Net: A Frequency-Aware Tri-Domain Diffusion Network for CT Metal Artifact Reduction** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
+*W. Chen, B. Ning, Z. Zhou, L. Shi, Q. Liu* \
+**Summary** \
+TDMAR-Net is an unsupervised diffusion model-based network that uniquely operates across three domains—projection (sinogram), image, and Fourier—to reduce metal artifacts in CT images. A high-pass filter module in the Fourier domain adjusts the weights of high-frequency and low-frequency components, while block-wise processing extracts diffusion priors that are iteratively introduced into the sinogram and image domains to fill metal-induced artifact regions. The framework employs a two-stage training strategy combining large-scale pretraining with masked data fine-tuning to enhance accuracy and adaptability. Validated on both synthetic and clinical datasets, TDMAR-Net demonstrates superior performance compared to existing unsupervised MAR methods. \
+Physics in Medicine & Biology, 2025. [[doi](https://doi.org/10.1088/1361-6560/ae0efc)]
+
  1. **Bi-Constraints Diffusion: A Conditional Diffusion Model With Degradation Guidance for Metal Artifact Reduction** <img src="https://img.shields.io/badge/Unsupervised-blue.svg" alt="Unsupervised"> \
 *M. Luo, N. Zhou, T. Wang, L. He, W. Wang, H. Chen, P. Liao, Y. Zhang* \
 **Summary** \
