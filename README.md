@@ -6,6 +6,12 @@
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
 
+ 1. **A Strategy for Simulation-Driven CT Metal Artifact Reduction Toward Improving Network Generalizability** <img src="https://img.shields.io/badge/Self-Supervised-blue.svg" alt="Self-Supervised"> \
+*S. Yun, S. Hyun, D.-I. Choi, S. Cho* \
+**Summary** \
+This paper proposes a self-supervised framework for CT MAR that integrates physics-informed correction with generative deep learning, eliminating the need for real paired datasets. The method consists of two main components: (1) a lightweight multi-layer perceptron (MLP) that performs physics-driven polynomial beam-hardening correction with implicit sinogram consistency built into its optimization objective, enabling case-specific adaptation; and (2) a conditional latent diffusion model (LDM) trained to remove residual artifacts after MLP correction. A key innovation is the simulation strategy: the learned MLP parameters are reused to generate artifact-contaminated images from artifact-free scans, producing pseudo paired data that enables self-supervised training of the LDM without requiring real paired datasets. By operating in a low-dimensional latent space, the LDM significantly reduces inference time compared to pixel-space diffusion models. The method was evaluated on both the SynDeepLesion dataset and real clinical data, demonstrating superior artifact removal and structural preservation compared to state-of-the-art MAR techniques. The authors also won the AAPM CT-MAR Grand Challenge using a related approach. The framework specifically addresses limitations of existing DL-based MAR methods, which lack explicit physical modeling of artifact formation and rely heavily on data-driven mappings, making them prone to hallucination and anatomical distortion. \
+Medical Physics, 2026. [[doi](https://doi.org/10.1002/mp.70336)]
+
  1. **PDuMSRNet: Prompt Guiding Multi-Scale Adaptive Sparse Representation-Driven Network for Low-Dose CT MAR** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
 *B. Shi, B. Chen, S. Zhang, H. Fu, Z. Hu* \
 **Summary** \
