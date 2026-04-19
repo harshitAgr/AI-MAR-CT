@@ -3,8 +3,26 @@
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Made With Love](https://img.shields.io/badge/Made%20With-Love-red.svg)](https://github.com/chetanraj/awesome-github-badges)
+[![DOI](https://zenodo.org/badge/744644178.svg)](https://doi.org/10.5281/zenodo.19651643)
 
  Collection of deep learning-based metal artifact reduction (MAR) articles for CT/CBCT Imaging.
+
+## Citation
+
+If you use this collection, please cite it via the Zenodo DOI. The **concept DOI** below always resolves to the latest release; use a specific version DOI from Zenodo for a pinned citation.
+
+```bibtex
+@misc{agrawal_ai_mar_ct,
+  author       = {Agrawal, Harshit},
+  title        = {{AI-MAR-CT: A curated collection of deep learning-based metal artifact reduction papers for CT/CBCT imaging}},
+  howpublished = {\url{https://github.com/harshitAgr/AI-MAR-CT}},
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.19651643},
+  url          = {https://doi.org/10.5281/zenodo.19651643}
+}
+```
+
+A `CITATION.cff` is included so GitHub renders a "Cite this repository" button in the sidebar with BibTeX/APA export.
 
  1. **FIND-Net: Fourier-Integrated Network with Dictionary Kernels for Metal Artifact Reduction** <img src="https://img.shields.io/badge/Supervised-blue.svg" alt="Supervised"> \
 *F. Tasharofi, F. Fan, M. Qahqaie, M. Thies, A. Maier* \

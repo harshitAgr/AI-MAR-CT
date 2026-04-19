@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this collection, please cite it as below."
+title: "AI-MAR-CT: A curated collection of deep learning-based metal artifact reduction papers for CT/CBCT imaging"
+authors:
+  - family-names: Agrawal
+    given-names: Harshit
+type: dataset
+repository-code: "https://github.com/harshitAgr/AI-MAR-CT"
+url: "https://github.com/harshitAgr/AI-MAR-CT"
+license: MIT
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.19651643
+    description: "Concept DOI (always resolves to the latest release)"
+  - type: doi
+    value: 10.5281/zenodo.19651644
+    description: "Version DOI for v2026.04"
+version: v2026.04
+date-released: 2026-04-08
